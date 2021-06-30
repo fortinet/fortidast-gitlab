@@ -1,0 +1,23 @@
+ScanJob:
+     tags:
+       - Your tag name
+     variables:
+
+       #input variable(string type)
+       scanurl: "Your scan url"
+
+       #input variable(string type)
+       uuid: "Your asset uuid"
+
+       #input variable(int type)Quick scan=0,Full scan=1
+       scantype: either 0 or 1
+
+       #input variable(string type)-Example:https://fortipentest.com/api/v1.0
+       apiUrl: "FortiPenTest API Url"
+
+       #input variable(string type)
+       apikey: "Your API Key"
+
+     script:
+       - python scan.py $apiUrl $scanurl $uuid $scantype $apikey
+
