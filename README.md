@@ -27,12 +27,14 @@ and triggers automated scan upon each commit.
 -   Register gitlab runner with your project. Steps to register a
     runner: <https://docs.gitlab.com/runner/register/>.
 
--   Add the given scan.py in the project you are working.
+-   Copy the file scan.py from the src directory to the project you are
+    working.
 
 -   Click on "Set up CI/CD Button". This opens a CI/CD editor to update
     or create the yml file .gitlab-ci.yml
 
--   Copy the below contents on the Editor and edit the variables.
+-   Copy the contents of file .gitlab-ci.yml from the src directory to
+    the CI Editor of your project and edit the variables.
 
 -   Provide the Tag name that was used while registering the runner.
 
