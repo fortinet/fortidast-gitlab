@@ -1,13 +1,13 @@
 # Overview
 
-Gitlab CI/CD establishes connection with FortiPenTest REST API server
+Gitlab CI/CD establishes connection with FortiDAST REST API server
 and triggers automated scan upon each commit.
 
-# 2.Integrating FortiPenTest with Gitlab for CI/CD
+# 2.Integrating FortiDAST with Gitlab for CI/CD
 
 ## 2.1. Configuration Details Needed from UI
 
--   Go to the FortiPenTest UI.
+-   Go to the FortiDAST UI.
 
 -   Click on User icon and click on settings.
 
@@ -38,13 +38,13 @@ and triggers automated scan upon each commit.
 
 -   Provide the Tag name that was used while registering the runner.
 
--   Paste the API Key, Scan URL, UUID that is copied from FortiPenTest
+-   Paste the API Key, Scan URL, UUID that is copied from FortiDAST
     UI.
 
--   Provide the FortiPenTest API URL.
+-   Provide the FortiDAST API URL.
 
 -   Provide scantype (Quick Scan = 0, Full Scan = 1)
 
 -   Commit .gitlab-ci.yml file
 
--   Every commit will create a job and triggers a scan to FortiPenTest
+-   Every commit will create a job and triggers a scan to FortiDAST

@@ -1,5 +1,5 @@
 '''
-Gitlab CI/CD establishes connection with FortiPenTest REST API server and
+Gitlab CI/CD establishes connection with FortiDAST REST API server and
 triggers automated scan upon each commit.
 '''
 
@@ -160,7 +160,7 @@ if __name__ == '__main__':
     parser = argparse.ArgumentParser(description= "Scan Configuration for "\
                                      "trigering Scan.")
 
-    parser.add_argument("apiUrl", help="FortiPentest REST API URL")
+    parser.add_argument("apiUrl", help="FortiDAST REST API URL")
     parser.add_argument("scanUrl",help="Scan Url on which scan to be triggered")
     parser.add_argument("Uuid", help="Asset UUID")
     parser.add_argument("scanType", help="Quick Scan=0, Full Scan=1")

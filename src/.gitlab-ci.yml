@@ -12,8 +12,8 @@ ScanJob:
        #input variable(int type)Quick scan=0,Full scan=1
        scantype: either 0 or 1
 
-       #input variable(string type)-Example:https://fortipentest.com/api/v1.0
-       apiUrl: "FortiPenTest API Url"
+       #input variable(string type)-Example:https://fortidast.forticloud.com/api/v1.0
+       apiUrl: "FortiDAST API Url"
 
        #input variable(string type)
        apikey: "Your API Key"
